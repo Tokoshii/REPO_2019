@@ -27,6 +27,10 @@ class TString {
     private:
         char* ptr = nullptr;
         std::size_t len = 0;
+        
+        friend std::ostream& operator<<(std::ostream& strumien, const TString& s);
+        friend std::istream& operator>>(std::istream& strumien, TString& s);
+
 };
 
 #endif // TSTRING_H
