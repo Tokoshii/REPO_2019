@@ -15,5 +15,8 @@ int main() {
     cout << s1 << endl;
     cin >> s1;
     cout << s1 << endl;
+    s1.insert(0,"POCZATEK");
+    s1.insert(s1.size(), "KONIEC");
+    s1.insert(s1.size()/2, "SRODEK")
     cout << "----------------" << endl;
 }
