@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\student.IT\\Documents\\IISExpress\\REPO2_2019"
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Default Light+",
+		"telemetry.enableTelemetry": false,
+		"telemetry.enableCrashReporter": false,
+		"files.associations": {
+			"ostream": "cpp"
+		}
+	}
+}

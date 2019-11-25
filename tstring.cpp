@@ -85,14 +85,13 @@ char* TString::insert(size_t pos, const char* c) {
     if (pos <= len) {
         size_t oldlen = len;
         len = len + strlen(c);
-        char* tmp + new char[len=1];
-        strcpy(tmp,ptr);
+        char* tmp = new char[len+1];
+        strcpy(tmp,ptr); // w powiekszonej tablicy tmp wpisalismy ptr
         for (size_t i=pos; i<pos+strlen(c); ++i) {
-            tmp [i] = c[i-pos];
-
+            tmp[i] = c[i-pos];
         }
-        for(size_t i=pos; i<oldlen; ++i){
-        tmp[i+strlen(c)] = ptr[i];
+        for (size_t i=pos; i<oldlen; ++i) {
+            tmp[i+strlen(c)] = ptr[i];
         }
         tmp[oldlen+strlen(c)] = '\0';
         delete [] ptr;
@@ -102,7 +101,6 @@ char* TString::insert(size_t pos, const char* c) {
         throw out_of_range("zly argument");
     }
     return ptr;
-
 }
 
 char* TString::insert(size_t pos, char c) {
